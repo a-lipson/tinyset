@@ -31,15 +31,18 @@ $ phi^(-1)(H) = {g in G_1 : phi(g) in H}. $
     What about a question that you don't need a proof for?
     #ans[Use the ans environment]
 ]
+
 ]
 
 ```
 ## Custom shorthand
 
-Sometimes when thinking about math I find it easier to phonetically write out these symbols instead of using the built in typst classes. I plan to expand this repository with more advanced versions of this shorthand, for instance proof structure i.e. cases or truth tables. On the other hand this might be a job more suited to snippets.  
+Sometimes when thinking about math I find it easier to phonetically write out these symbols instead of using the built in typst classes. For certain others I find the original symbols annoying to type quickly.  
 
-| shorthand |
-| --- |
-| implies / impl | 
-| iff | 
-| qed | 
+| shorthand | expansion |
+| --- | --- |
+| implies / impl | ==> |
+| iff | <==> |
+| wlog | without loss of generality |
+| inv(<expression>) | (<epression>)^(-1) |
+
