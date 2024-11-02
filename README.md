@@ -1,6 +1,6 @@
 # Tinyset
 Extremely simple [typst](https://github.com/typst/typst) package for writing
-math problem sets quickly and consistently. Under the hood it is just typst fundamentals that could easily be defined by hand, however the aim of this package is to provide a more ergonomic and readable experience. 
+math problem sets quickly and consistently. Under the hood it is just typst fundamentals that could be defined by hand, however the aim of this package is to make you faster and the code easier to read.
 
 ## Usage
 Import styles and create a new header. I like to copy this from the top of the
@@ -29,7 +29,8 @@ $ phi^(-1)(H) = {g in G_1 : phi(g) in H}. $
 
 + #pt[ 
     What about a question that you don't need a proof for?
-    #ans[Use the ans environment]]
+    #ans[Use the ans environment]
+]
 ]
 
 ```
