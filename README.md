@@ -2,7 +2,7 @@
 Extremely simple [typst](https://github.com/typst/typst) package for writing
 math problem sets quickly and consistently. Under the hood it is just typst fundamentals that could be defined by hand, however the aim of this package is to make you faster and the code easier to read.
 
-![WARN]
+> [!WARNING]  
 > Tinyset has not yet been added to typst universe, and must be copied by hand. 
 
 ## Usage
