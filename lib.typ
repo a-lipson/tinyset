@@ -1,25 +1,28 @@
-#let header(number, class: "Math 3551 - Fall 2024") = {
-  // set text(font: "New Computer Modern Math")
+/// You must create a header to get the rest of the style
+#let header(number: 1, class: "Math 3551 - Fall 2024", name: "Your Name") = {
+  set text(font: "New Computer Modern Math")
   align(center)[
     #class \
-    Sylvan Franklin - Homework #number
+    #name - Homework #number
   ]
+  set par(justify: true)
 }
 
-#let ans(body) = {
- set enum(numbering: "1. ")
- block(inset: 1em)[
-   #body
- ]
-}
-
-#let prf = thmproof("proof", "Proof")
-#let iff = $<==>$
-#let inv(content) = {$content^(-1)$}
+// custom shorthands, feel free to comment these out if they are in the way.
+#let inv(expression) = {$(expression)^(-1)$}
 #let implies = $==>$
+#let impl = $==>$
+#let iff = $<==>$
+#let qed = [#v(0.2em)#h(1fr)$square.big$]
 
-#let q(body) = {
+// environments
+#let ans(body) = {[#par(justify: true)[#body]]}
+#let prf(body) = {ans[_Proof:_ #body #qed]}
+#let qs(body) = {
   set enum(numbering: "(a)")
+  body
+}
+#let pt(body) = {
   body
 }
 
