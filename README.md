@@ -15,22 +15,21 @@ previous week's homework (make sure you don't forget to increment the number).
 Example using proof, question, and part environments. Indentation in source code is largely ignored and left to personal preference. By default questions are numbered and each part is lettered, you can change this based on course / instructor preference.
 
 ```typ
-+ #qs[Let $G_1$ and $G_2$ be groups, $phi : G_1 -> G_2$ be a homomorphism, and $H$ be any subgroup of $G_2$. Define
++ #qs[
+Let $G_1$ and $G_2$ be groups, $phi : G_1 -> G_2$ be a homomorphism, and $H$ be
+any subgroup of $G_2$. Define
 
 $ phi^(-1)(H) = {g in G_1 : phi(g) in H}. $
 
-+ #pt[
-Prove that $phi^(-1)(H)$ is a subgroup of $G_1$.
++ #pt[ 
+    Prove that $phi^(-1)(H)$ is a subgroup of $G_1$.
+    #prf[ Non empty: Since $H$ is a subgroup it contains the indentity, and
+    since $phi$ is a homomorphism and ... ]
+]
 
-#prf[
-Non empty: Since $H$ is a subgroup it contains the indentity, and since $phi$ is a homomorphism and ...
-]]
-
-+ #pt[
-What about a question that you don't need a proof for?
-
-#ans[Use the ans environment]]
-
++ #pt[ 
+    What about a question that you don't need a proof for?
+    #ans[Use the ans environment]]
 ]
 
 ```
