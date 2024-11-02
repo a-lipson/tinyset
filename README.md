@@ -4,17 +4,14 @@ math problem sets quickly and consistently. Under the hood it is just typst fund
 
 ## Usage
 Import styles and create a new header. I like to copy this from the top of the
-previous week's homework (make sure you don't forget to increment the number).
-
-```typ
-#import "lib": *;
-
-#header(number: 7, name: "Sylvan Franklin", class: "Math 3551 - Fall 2024")
-```
+previous week's homework (don't forget to increment the number!).
 
 Example using proof, question, and part environments. Indentation in source code is largely ignored and left to personal preference. By default questions are numbered and each part is lettered, you can change this based on course / instructor preference.
 
 ```typ
+#import "@preview/tinyset:0.1.0": *
+#header(number: 7, name: "Sylvan Franklin", class: "Math 3551 - Fall 2024")
+
 + #qs[
 Let $G_1$ and $G_2$ be groups, $phi : G_1 -> G_2$ be a homomorphism, and $H$ be
 any subgroup of $G_2$. Define
