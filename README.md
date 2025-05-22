@@ -32,7 +32,6 @@ $ phi^(-1)(H) = {g in G_1 : phi(g) in H}. $
 ]
 
 ]
-
 ```
 
 ## Custom shorthand
