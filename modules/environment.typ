@@ -29,11 +29,12 @@
 
 #let problem(body) = {
   problem-counter.step()
-  v(0.5em)
+  // v(0.5em)
   context {
     [*Problem* #problem-counter.display().]
     h(0.5em)
   }
+  set enum(spacing: 1em)
   body
   v(0.5em)
 }
@@ -145,13 +146,14 @@
     body = args.pos().at(0)
     // both proof name and body were provided
   } else if args.pos().len() == 2 {
-    let name = args.pos().at(0)
-    if name.has("text") and name.text.trim() != "" {
-      proof += " of " + name
-    }
+    // let name = args.pos().at(0)
+    // if name.has("text") and name.text.trim() != "" {
+    //   proof += " of " + name
+    // }
+    proof += " of " + args.pos().at(0)
     body = args.pos().at(1)
   }
-  v(0.5em)
+  // v(0.5em)
   [_#proof._]
   h(0.5em)
   body
