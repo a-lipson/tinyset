@@ -12,3 +12,6 @@
 // inverse
 #let inv(expression) = { $(expression)^(-1)$ }
 
+// cyclic group
+// #let cyc(x) = $angle.l #x angle.r$
+#let cyc(..args) = $chevron.l #args.pos().join([, ]) chevron.r$
