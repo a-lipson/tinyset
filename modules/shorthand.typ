@@ -11,5 +11,7 @@
 #let impl = $==>$
 
 #let iff = $<==>$
+#let iso = $tilde.equiv$
+#let comp = $compose$
 
 #let atc = [Assume towards $==><==$]
